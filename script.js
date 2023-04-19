@@ -1,15 +1,15 @@
 let count = 1;
 document.getElementById("radio1").checked = true;
 
-setInterval(function(){
+setInterval(function () {
     nextIamge();
 }, 5000)
 
-function nextIamge(){
+function nextIamge() {
     count++;
-    if(count>4){
-    count = 1;
+    if (count > 4) {
+        count = 1;
     }
 
-    document.getElementById("radio"+count).checked = true;
+    document.getElementById("radio" + count).checked = true;
 }
