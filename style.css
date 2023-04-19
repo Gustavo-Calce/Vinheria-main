@@ -110,7 +110,7 @@ footer {
 .home {
     padding-top: 25px;
     margin: 0 auto;
-    width: 100%;
+    width: 1000px;
     height: 600px;
     overflow: hidden;
 }
@@ -132,12 +132,13 @@ footer {
 }
 
 .image img {
-    width: 100%;
+    width: 1000px;
+    border-radius: 25px;
 }
 
 .manual-nav {
     position: absolute;
-    width: 100%;
+    width: 1000px;
     margin-top: -100px;
     display: flex;
     justify-content: center;
@@ -185,7 +186,7 @@ label:hover {
 
 .navegation-auto {
     position: absolute;
-    width: 100%;
+    width: 1000px;
     margin-top: 500px;
     display: flex;
     justify-content: center;
@@ -209,4 +210,195 @@ label:hover {
 
 #radio4:checked~.navegation-auto .auto-btn4 {
     background-color: white;
+}
+
+.box1 img {
+    height: 200px;
+    width: 200px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section2 h1 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.box1 {
+    margin-top: 25px;
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: -1px 15px 70px -27px rgba(0, 0, 0, 0.75);
+    margin: 25px auto;
+}
+
+.box1 h2 {
+    padding: 20px;
+}
+
+.box1 .main-card {
+    display: flex;
+    width: 200%;
+    transition: 1s;
+}
+
+#two:checked~.main-card {
+    margin-left: -98.5%;
+}
+
+.box1 .main-card .cards {
+    width: calc(100% / 2 -10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px)
+}
+
+.main-card .cards .card {
+    width: 292px;
+    background: white;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards .card h3 {
+    font-size: 15px;
+    margin: 10px 0 05px 0;
+    text-align: center;
+}
+
+.card i {
+    color: burlywood;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    padding: 10px 50px;
+    margin-top: 10px;
+    background-color: burlywood;
+    border-radius: 25px;
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box1 .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: burlywood;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button label.active {
+    width: 35px;
+}
+
+#one:checked~.button .one {
+    width: 35px;
+}
+
+#two:checked~.button .one {
+    width: 15px;
+}
+
+#two:checked~.button .two {
+    width: 35px;
+}
+
+.box1 input {
+    display: none;
+}
+
+.branco .main-card {
+    display: flex;
+    width: 200%;
+    transition: 1s;
+}
+
+#two2:checked~.main-card {
+    margin-left: -98.5%;
+}
+
+.branco .button2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.button2 label {
+    height: 15px;
+    width: 15px;
+    border-radius: 20px;
+    background: burlywood;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button2 label.active {
+    width: 35px;
+}
+
+#one2:checked~.button2 .one {
+    width: 35px;
+}
+
+#two2:checked~.button2 .one {
+    width: 15px;
+}
+
+#two2:checked~.button2 .two {
+    width: 35px;
+}
+
+.branco input {
+    display: none;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+}
+
+#data {
+    padding: 0;
+    color: gray;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+
+#data:hover {
+    text-decoration: underline;
 }
